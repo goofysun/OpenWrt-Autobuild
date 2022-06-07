@@ -87,8 +87,8 @@ svn export -q https://github.com/tty228/luci-app-serverchan/trunk package/new/lu
 
 # ShadowsocksR Plus+
 svn export -q https://github.com/fw876/helloworld/trunk package/helloworld
+rm -rf ./feeds/packages/net/shadowsocks-libev
 svn export -q https://github.com/coolsnowwolf/packages/trunk/net/shadowsocks-libev package/helloworld/shadowsocks-libev
-rm -rf ./feeds/packages/net/{xray-core,shadowsocks-libev}
 cp -rf ../immortalwrt-packages/net/{dns2socks,ipt2socks,microsocks,pdnsd-alt,redsocks2} package/new/
 # building ssr-libev with libmbedtls
 patch -d package/helloworld -p1 -i ../../../patches/building-ssr-libev-with-libmbedtls.patch
