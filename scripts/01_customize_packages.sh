@@ -118,3 +118,4 @@ find package/new/ -type f -name Makefile -exec sed -i 's,../../luci.mk,$(TOPDIR)
 
 mkdir -p package/custom
 git clone https://github.com/kiddin9/openwrt-packages package/kiddin9
+git clone https://github.com/AlexZhuo/luci-app-bandwidthd.git package/custom/luci-app-bandwidthd --depth 1
